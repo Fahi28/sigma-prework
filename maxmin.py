@@ -1,11 +1,7 @@
 def max_min(nums):
+    nums.sort()
     min = nums[0]
-    max = nums[0]
-    for num in nums:
-        if num < min:
-            min = num
-        if num > max:
-            max = num
+    max = nums[len(nums) - 1]
     return [min, max]
 
 
